@@ -1,0 +1,30 @@
+//Sum of Three numbers using Generic class
+
+
+public class SumOfThreeNum<T> {
+     T num1;
+     T num2;
+     T num3;
+     
+     public SumOfThreeNum(T n1, T n2, T n3)
+     {
+       num1=n1;
+       num2=n2;
+       num3=n3;
+     }
+
+     public void sum()
+     {
+       double sum=(double)((Integer)num1 + (Integer)num2 + (Integer)num3);
+       System.out.println("Sum is: "+sum);
+     }
+     
+     public static void main(String args[])
+     {
+       SumOfThreeNum<Integer> g = new SumOfThreeNum<Integer>(1,2,3);
+       g.sum();
+     }
+
+  }
+
+

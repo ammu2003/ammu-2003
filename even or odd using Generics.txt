@@ -1,0 +1,32 @@
+//To check the given number is even or odd using Generics
+
+
+public class Even<T> {
+    T number;
+
+    Even(T number) {
+        this.number = number;
+  }
+    public void checkOddEven() {
+          if (number instanceof Integer) {
+              if ((Integer)number % 2 == 0) {
+                  System.out.println((Integer)number + " is even number");
+              } else {
+                  System.out.println((Integer)number + " is odd number");
+              }
+          } else {
+              System.out.println("Please provide Integer input");
+          }
+      }
+}
+public class EvenDemo {
+
+  public static void main(String[] args)
+ {
+    // TODO Auto-generated method stub
+
+    Even<Integer> e = new Even<>(10);
+    e.checkOddEven();
+  }
+
+}

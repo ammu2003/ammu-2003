@@ -1,0 +1,21 @@
+// Example for Clean Code: 
+------------------------------------------------------------- 
+package helloworld;
+
+//calculate sum of three numbers
+
+public class SumOfThree {
+
+//sum of three numbers
+ int sumThree(int num1, int num2, int num3)
+{
+ int sum=num1+num2+num3;
+ return sum;
+}
+public static void main(String args[])
+{
+ SumOfThree s=new SumOfThree();
+ int s1=s.sumThree(20, 30, 40);
+ System.out.println("sum of three nuymbers="+s1);
+}
+}

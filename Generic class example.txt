@@ -1,0 +1,50 @@
+//Generic Class Example 
+// create a generics class 
+
+
+class GenericsClass<T>  
+{ 
+  // variable of T type 
+  private T data; 
+
+public  GenericsClass(T data) { 
+    this.data = data; 
+  } 
+
+void setData() 
+{ 
+} 
+
+
+   // method that return T type variable
+ 
+ T getData() 
+  { 
+    return this.data; 
+  } 
+} 
+ 
+ 
+ 
+ 
+class GenericClassDemo { 
+
+  public static void main(String args[])  
+{ 
+   GenericClass obj=new GenericClass(“vijay”); 
+ 
+ 
+    // initialize generic class with String data 
+    GenericsClass<String> obj = new GenericsClass<>("Java Programming"); 
+    System.out.println("Generic Class returns: " + obj.getData()); 
+  } 
+}
+
+
+
+
+
+
+
+
+

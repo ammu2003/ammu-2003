@@ -1,0 +1,26 @@
+// Generic Method Example 
+ 
+class GenericMethod 
+{ 
+  // creae a generics method 
+  public <T> void genMethod(T data)  
+  { 
+    System.out.println("Generics Method:"); 
+    System.out.println("Data Passed: " + data); 
+  } 
+} 
+ 
+ 
+class GenericMethodDemo 
+{ 
+  public static void main(String args[])  
+   { 
+ 
+    // initialize the class with Integer data 
+    GenericMethod gm = new GenericMethod(); 
+ 
+    // generics method working with String 
+    gm.<String>genMethod("Java Programming"); 
+ 
+    } 
+}
